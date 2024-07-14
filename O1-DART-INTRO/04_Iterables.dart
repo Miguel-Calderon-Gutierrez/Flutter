@@ -8,5 +8,9 @@ void main() {
   print('Reversed: ${number.reversed}');
 
   final reversedNumbres = number.reversed;
-  print('Iterable: ${number[0]}');
+  print('Iterable: $reversedNumbres');
+  print('list: ${number.toList()}');
+  print('set: ${number.toSet()}');
+
+  
 }
