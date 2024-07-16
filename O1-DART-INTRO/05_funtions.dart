@@ -1,6 +1,7 @@
 void main() {
   print(greetEveryone());
   print('suma ${addTwoNumbers2(15, 20)}');
+  print(saludarPersona(name: "Miguel"));
 }
 
 String greetEveryone() {
@@ -15,3 +16,7 @@ int addTwoNumbers(int a, [int? b = 0]) {
 }
 
 int addTwoNumbers2(int a, int b) => a + b;
+
+String saludarPersona({required String name, String message = "Hola, "}) {
+  return message + name;
+}
