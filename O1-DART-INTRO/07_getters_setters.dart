@@ -16,7 +16,6 @@ class Square {
   set side(double value) {
     print('set value of site of square $_side to $value ');
     if (value < 0) throw 'value must be >= 0';
-
     _side = value;
   }
 
