@@ -1,5 +1,5 @@
 void main() {
-  final mySquare = new Square(side: 5);
+  final mySquare = new Square(side: -5);
  // mySquare.side = -8;
   print(mySquare.area);
 }
@@ -7,7 +7,9 @@ void main() {
 class Square {
   double _side;
 
-  Square({required double side}) : _side = side;
+  Square({required double side}) :
+    assert(side >= 0,'side must be >= 0'),
+   _side = side;
 
   double get area {
     return _side * _side;
