@@ -1,7 +1,9 @@
 void main() {
   final windPlant = new WindPlant(inicialEnery: 100.0);
-  print(windPlant);
+  final nuclearplant = new NuclearPlant();
+
   print('wind: ${chargePhone(windPlant)}');
+  print('Noclear: ${chargePhone(nuclearplant)}');
 }
 
 double chargePhone(EnergyPlant plant) {
@@ -32,4 +34,9 @@ class WindPlant extends EnergyPlant {
     print("Consumiendo energia: $amount kWh");
     energyLedt -= amount;
   }
+}
+
+//pendiente de implements vs extends
+class NuclearPlant implements EnergyPlant {
+
 }
