@@ -39,4 +39,13 @@ class WindPlant extends EnergyPlant {
 //pendiente de implements vs extends
 class NuclearPlant implements EnergyPlant {
 
+double energyLedt;
+PlantType type;
+
+  NuclearPlant({required inicialEnery}) : super(energyLedt: inicialEnery, type: PlantType.nuclear);
+  @override
+  void consumeEnergy(double amount) {
+    print("Consumiendo energia: $amount kWh");
+    energyLedt -= (amount*0.5);
+  }
 }
