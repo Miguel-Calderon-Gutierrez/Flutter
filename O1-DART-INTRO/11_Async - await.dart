@@ -14,8 +14,8 @@ void main() async {
 
 Future<String> httpGet(String url) async {
   await Future.delayed(Duration(seconds: 1));
-  
-  throw "Error en la petición";
 
+  //throw "Error en la petición";
   return "http://localhost";
+  
 }
